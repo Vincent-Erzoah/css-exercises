@@ -1,1 +1,24 @@
 /* Add CSS Styling */
+/* Base style for all odd-numbered elements */
+.odd-element {
+  background-color: #ffcccc; /* Light pink/red */
+  font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+/* Unique style for the second element */
+#second-element {
+  color: blue;
+  font-size: 36px;
+}
+
+/* Additional style for the third element */
+.special-odd {
+  font-size: 24px;
+}
+
+/* Unique style for the fourth element */
+#fourth-element {
+  background-color: #ccffcc; /* Light green */
+  font-size: 24px;
+  font-weight: bold;
+}
