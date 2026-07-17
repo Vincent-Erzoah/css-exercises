@@ -2,41 +2,43 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.para,
-.small-para {
+/* --- PARAGRAPHS --- */
+.para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
+  font-size: 22px;
 }
 
+/* Moved below .para so rule order lets it override font-size */
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
-
+/* --- BUTTONS --- */
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
+/* Moved below .button so rule order lets it override background-color and color */
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
 }
 
+/* --- DIVS --- */
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+/* Chained div.child to increase specificity and beat div.text */
+div.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
 }
