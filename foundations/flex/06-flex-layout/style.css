@@ -24,3 +24,100 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+
+
+
+/* 1. Spread the two lists to the far left and right sides of the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px; /* Optional: adds spacing inside the header box */
+}
+
+/* 2. Turn both lists horizontal and remove the default browser styling */
+.left-links,
+.right-links {
+  display: flex;
+  gap: 20px;             /* Adds space between the list items */
+  list-style-type: none; /* Removes the bullet points */
+  padding: 0;            /* Removes default list indents */
+  margin: 0;
+}
+
+/* 3. Optional: Style the links inside the lists */
+.header a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+/* 1. Center the whole block and stack the logo, input, and buttons vertically */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* Centers everything horizontally */
+  justify-content: center; /* Centers everything vertically if container has height */
+  gap: 24px;              /* Adds space between the logo, input, and buttons */
+}
+
+/* 2. Optional: Ensure the input wrapper or input field looks neat */
+.input input {
+  width: 500px;           /* Gives the search bar a standard wide layout */
+  padding: 12px;
+  border-radius: 24px;    /* Makes the input field rounded */
+  border: 1px solid #ccc;
+}
+
+/* 3. Layout the buttons horizontally side-by-side */
+.buttons {
+  display: flex;
+  gap: 12px;              /* Adds spacing between the two buttons */
+}
+
+/* 4. Optional: Basic button styling */
+.buttons button {
+  padding: 10px 16px;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+/* 1. Push the two lists to the opposite ends of the footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px; 
+  background-color: #f2f2f2; /* Optional: standard footer background color */
+}
+
+/* 2. Turn both lists horizontal and remove bullets/spacing */
+.left-links,
+.right-links {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 3. Optional: Style the footer links */
+.footer a {
+  text-decoration: none;
+  color: #70757a;
+  font-size: 14px;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
